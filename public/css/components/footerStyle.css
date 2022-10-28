@@ -1,0 +1,114 @@
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(37, 37, 37, 0.9);
+}
+
+
+.bloqueUno{
+    width: 20rem;
+    margin: 1.5rem;
+    border-right: 1px solid rgb(58, 58, 58);
+}
+
+.bloqueDos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    margin: 1.5rem;
+}
+
+.bloqueTres{
+    width: 20rem;
+    margin: 1.5rem;
+    border-left: 1px solid rgb(58, 58, 58);
+}
+
+#contacts{
+    display: flex;
+    justify-content: center;
+}
+
+#contacts i{
+    color: rgb(100,100,100);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#informacion{
+    margin: 1.2rem;
+    color: rgb(100,100,100);
+}
+
+#informacion p{
+    font-size: 0.9rem;
+}
+
+.bloqueDos figure{
+    display: flex;
+    justify-content: center;
+}
+
+.bloqueDos img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.bloqueDos div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 1rem;
+}
+
+.bloqueDos a{
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    color: rgb(100,100,100);
+    text-decoration: underline;
+}
+
+.bloqueTres{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bloqueTres p{
+    display: flex;
+    justify-content:center;
+    color: rgb(100,100,100);
+    font-size: 0.8rem;
+}
+
+.bloqueTres a{
+    text-decoration: underline;
+    margin-bottom: 0.8rem;
+    color: rgb(100,100,100);
+}
+
+.bloqueTres div{
+    display: flex;
+    justify-content: center;
+    color: rgb(100,100,100);
+}
+
+.bloqueTres i{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.9);
+}
+
+.copyright a{
+    color: rgb(100,100,100);
+}
