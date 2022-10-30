@@ -7,12 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/60811efc65.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/css/components/headerStyle.css">
-    <link rel="stylesheet" href="../public/css/components/reset.css">
-    <link rel="stylesheet" href="../public/css/components/footerStyle.css">
-
-    <link rel="stylesheet" href="../public/css/indexStyle.css">
-    <link rel="stylesheet" href="../public/css/registerStyle.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
 
     <title>Say Whisky!</title>
     <!--
@@ -34,60 +29,58 @@
             <figcaption>Fig1. - LogowTag</figcaption>
         </figure>
 
-
         <nav id="first">
             <a href="./index.html">Home</a></li>
-            <a href="./index.html">Products</a></li>
-            <a href="./aboutus.html">About Us</a></li>
+            <a href="./product.html">Products</a></li>
+            <a href="./recipes.html">Recipes</a></li>
         </nav>
 
-
-        <nav role='navigation' id="second">
+        <nav id="second">
             <ul>
                 <li>
-                    <a>
-                        <div class="box">
-                            <div class="searchBox">
-                                <input type="text">
-                                <span></span>
-                            </div>
-                        </div>
-                    </a>
+                    <i class="fa-solid fa-magnifying-glass"><input type="text"></i>
                 </li>
-                <li><a href="#" id="ingresar"><i class="fa-solid fa-user"></i></a></a>
-                    <ul>
-                        <li><a href="./register.html" id="test">Register</a></li>
-                        <li><a href="./login.html" id="test">Login</a></li>
-                    </ul>
+                <li>
+                    <a href="./register.html" id="user">Sign Up</a>
+
                 </li>
-                <li><a href="./index.html" id="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <p>|</p>
+                <li>
+                    <a href="./login.html" id="user">Sign In</a>
+                </li>
+                <li>
+                    <a href="./index.html" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="banner">
-            <div class="slide-container">
-                <div class="slide-box" style="background-image: url('../public/assets/banner1.jpg');">
-                    <div class="slide-box-containt">
-                        <h2>Nuevos ingresos exclusivos</h2>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium</p>
-                    </div>
+            <div class="bannerImage-Container">
+                <div class="ban image1">
+                    <img src='../public/assets/banner1.jpg' alt="bannerImage">
+                    <h2 id="TituloGold">Nuevos ingresos exclusivos</h2>
+                    <p id="TituloSilver"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium
+                    </p>
                 </div>
-                <div class="slide-box" style="background-image: url('../public/assets/banner2.jpg');">
-                    <div class="slide-box-containt">
-                        <h2>Ultimos disponibles</h2>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium</p>
-                    </div>
+                <div class="ban image2">
+                    <img src='../public/assets/banner2.jpg' alt="bannerImage">
+                    <h2 id="TituloGold">Ultimos disponibles</h2>
+                    <p id="TituloSilver"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium
+                    </p>
                 </div>
-                <div class="slide-box" style="background-image: url('../public/assets/banner3.jpg');">
-                    <div class="slide-box-containt">
-                        <h2>Kits para mixologia botanica</h2>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium</p>
-                    </div>
+                <div class="ban image3">
+                    <img src='../public/assets/banner3.jpg' alt="bannerImage">
+                    <h2 id="TituloGold">Kits para mixologia botanica</h2>
+                    <p id="TituloSilver">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium
+                    </p>
                 </div>
             </div>
         </section>
+
+
+
 
         <div class="titulos">
             <a id="TituloGold">DISCOVER </a><a id="TituloSilver">Featured Products</a>
@@ -98,49 +91,41 @@
                 <article class="sales" id="sale1">
                     <a href="/"><img src="../public/assets/sale1.png" alt="sale_img1"></a>
                 </article>
-                <h2>Grant´s Triple Wood</h2>
-                <h3>Blended Scotch Whisky</h3>
-                <br>
+                <h3>Grant´s Triple Wood</h3>
+                <h2 id="TituloGold">Blended Scotch Whisky</h2>
                 <h4>ARS$5.890</h4>
-                <h4>
-                    <p>$7.550</p>
-                </h4>
+                <h5>$7.550</h5>
+
             </div>
             <div>
                 <article class="sales" id="sale2">
                     <a href="/"><img src="../public/assets/sale2.png" alt="sale_img2"></a>
                 </article>
-                <h2>Jack Daniels</h2>
-                <h3>Tennessee Whiskey</h3>
-                <br>
+                <h3>Jack Daniels</h3>
+                <h2 id="TituloGold">Tennessee Whiskey</h2>
                 <h4>ARS$5.890</h4>
-                <h4>
-                    <p>$7.550</p>
-                </h4>
+                <h5>$7.550</h5>
+
             </div>
             <div>
                 <article class="sales" id="sale3">
                     <a href="/"><img src="../public/assets/sale3.png" alt="sale_img3"></a>
                 </article>
-                <h2>Johnnie Walker</h2>
-                <h3>Red Label</h3>
-                <br>
+                <h3>Johnnie Walker</h3>
+                <h2 id="TituloGold">Red Label</h2>
                 <h4>ARS$5.890</h4>
-                <h4>
-                    <p>$7.550</p>
-                </h4>
+                <h5>$7.550</h5>
+
             </div>
             <div>
                 <article class="sales" id="sale4">
                     <a href="/"><img src="../public/assets/sale4.png" alt="sale_img4"></a>
                 </article>
-                <h2>Jim Beam</h2>
-                <h3>Bourbon White</h3>
-                <br>
+                <h3>Jim Beam</h2>
+                    <h2 id="TituloGold">Bourbon White
+                </h3>
                 <h4>ARS$5.890</h4>
-                <h4>
-                    <p>$7.550</p>
-                </h4>
+                <h5>$7.550</h5>
             </div>
         </section>
 
@@ -172,7 +157,6 @@
         <section id="explore">
             <img src="../public/assets/breath.jpg" alt="Explore_background">
             <p>The world has changed dramatically. But our quality never has.</p>
-            <br>
             <p><a href="/">Explore more...</a></p>
         </section>
 
@@ -204,7 +188,6 @@
 
             <div id="calificados_1">
                 <div>
-                    <p></p>
                     <article>
                         <a href="/"><img src="../public/assets/sale1.png" alt="mejor_calificado1"></a>
                     </article>
@@ -235,8 +218,8 @@
                     <a href=''> <i class="fab fa-linkedin"></i></a>
                 </div>
                 <div id="informacion">
-                    <p><i class="far fa-envelope"></i>contacto@vinosyspirits.com</p>
-                    <p>Atención de Lunes a Viernes de 9 a 18 hs.</p>
+                    <p><i class="far fa-envelope"></i>contacto@saywhisky.com</p>
+                    <p>Opening hours: Monday to Friday (9hs to 18hs)</p>
                     <p>0800-888-0600</p>
                 </div>
             </div>
@@ -249,15 +232,15 @@
                 <div>
                     <a href="/">Home</a>
                     <a href="/products">Products</a>
-                    <a href="/aboutus">About us</a>
+                    <a href="/aboutus">Recipes</a>
                 </div>
             </div>
 
 
             <div class="bloqueTres">
-                <p><a href="/preguntasfrecuentes">Preguntas Frecuentes</a></p>
-                <p><a href="/envios">Envios</a></p>
-                <p>Metodos de pago:</p>
+                <p><a href="/preguntasfrecuentes">Frequent questions</a></p>
+                <p><a href="/envios">Shipments</a></p>
+                <p>Payment Methods:</p>
                 <div>
                     <i class="fab fa-cc-paypal"></i>
                     <i class="fab fa-cc-amex"></i>
@@ -270,13 +253,11 @@
 
         <section class="copyright">
             <p>
-                Copyright ©2020. Todos los Derechos Reservados.
+                Copyright ©2020. All rights reserved.
 
-                <a href="/tyc">Términos & Condiciones</a>
+                <a href="/tyc">Terms and Conditions</a>
                 |
-                <a href="/politicasdeprivacidad">Política de Privacidad</a>
-                |
-                <a href="/tyccompras">Términos & Condiciones de Compra</a>
+                <a href="/politicasdeprivacidad">Privacy Policy</a>
             </p>
         </section>
     </footer>
