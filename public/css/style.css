@@ -1,0 +1,246 @@
+			/******************
+				RESET STYLE
+			*******************/
+
+
+*{
+    font-family: 'Philosopher', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+			/******************
+				HEADER STYLE
+			
+
+header{
+    width: 100vh;
+    padding-top: 5vh;
+    height: 30%;
+    background-color: rgba(39, 39, 37, 0.797);
+}
+
+#nav-bar{
+    background-color: rgba(39, 39, 37, 0.797);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vh;
+    gap: 5vh;
+}
+
+#nav-bar .nav-col.izq {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: left;
+    margin-left: 5vh;
+}
+
+#nav-bar .nav-col.izq a{
+    padding: 0vh 3vh 0vh 2vh;
+    font-size: 3vh;
+}
+
+#nav-bar .nav-col.der {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: right;
+    margin-right: 5vh;
+}
+
+#nav-bar .nav-col.der a{
+    padding: 0vh 2vh 0vh 2vh;
+    font-size: 2vh;
+}
+#nav-bar .nav-col.der i{
+    margin: 1vh;
+    font-size: 3vh;
+}
+
+#nav-bar .nav-col.logo{
+    height: 20vh;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 4vh;
+}
+
+#nav-bar .nav-col.logo img{
+    height: 20vh;
+}
+
+figcaption{
+    display: none;
+}
+
+.fa-regular.fa-user{
+    color: rgb(202, 132, 2);
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: 1s;
+}
+.fa-regular.fa-user:hover{
+    background-color: blue;
+}
+*******************/
+
+			/******************
+				HEADER STYLE
+			*******************/
+
+.index-body{
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "info info info"
+        "pie pie pie";
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 7.5fr 1.5fr;
+}
+
+.index-body #index-header{
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    margin-top: 3vh;
+}
+.index-body #index-main{
+    grid-area: info;
+}
+.index-body #index-footer{
+    grid-area: pie;
+}
+
+#nav-bar {
+    background-color: rgba(39, 39, 37, 0.797);
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+    font-size: 2.7vh;
+}
+
+#nav-bar .nav-col.izq {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#nav-bar .nav-col.izq a{
+    margin: 0 3vh 1vh 8vh;
+    color: rgb(202, 132, 2);
+}
+
+#nav-bar .nav-col.logo{
+    display: flex;
+    justify-content: center;
+}
+#nav-bar .nav-col.logo img {
+    height: 100%;
+    size: 100%;
+    transform: translateY(7vh);
+}
+
+#nav-bar .nav-col.der {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    
+}
+
+.user-despleg + .cart{
+    background-color: aqua;
+    margin: 0.5vh, 4vh, 0vh, 4vh;
+}
+
+
+.nav-col.izq .search-box {
+    background-color: none;
+    height: 4.5vh;
+    width: 4.5vh;
+    border-radius: 10vh;
+    margin-left: 2vh;
+}
+
+.nav-col.izq .search-box:hover > .search-txt {
+    width: 40vh;
+    background-color: rgba(39, 39, 37, 0.797);
+    border: 1px solid rgb(202, 132, 2);
+}
+
+.nav-col.izq .search-btn {
+    transform: translateX(-8vh);
+    position: absolute;
+    width: 4.5vh;
+    height: 4.5vh;
+    border-radius: 50%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.nav-col.izq .search-txt {
+    border: none;
+    border-radius: 50vh;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 0 0 4vh;
+    font-size: 2vh;
+    transition: .4s;
+    line-height: 4vh;
+    width: 0;
+    color: rgb(202, 132, 2);
+}
+  
+  .user-despleg {
+    background: none;
+    color: rgb(202, 132, 2);
+  }
+  .user-despleg li {
+    display: none;
+    color: rgb(202, 132, 2);
+    border: 1px , solid, rgb(202, 132, 2);
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .user-despleg:hover > li{
+    display: block;
+    position: absolute;
+  }
+
+  .nav-col.der > li:hover .lnb {
+    display: block;
+    
+  }
+  
+
+
+
+
+
+			/******************
+				BODY STYLE
+			*******************/
+
+    
+body{
+    background-image: url("../assets/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #272725;
+}
