@@ -156,7 +156,7 @@ figcaption{
     
 }
 
-.user-despleg + .cart{
+.user-despleg .cart{
     background-color: aqua;
     margin: 0.5vh, 4vh, 0vh, 4vh;
 }

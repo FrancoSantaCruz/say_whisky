@@ -1,4 +1,6 @@
-# Proyecto: Say Whisky
+**Comisión 33120**
+
+# Proyecto: Say Whisky | CoderHouse 
 
 ## Servicios y productos que ofrece nuestro sitio
 
