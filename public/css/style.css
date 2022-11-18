@@ -14,82 +14,7 @@
     outline: none;
 }
 
-			/******************
-				HEADER STYLE
-			
 
-header{
-    width: 100vh;
-    padding-top: 5vh;
-    height: 30%;
-    background-color: rgba(39, 39, 37, 0.797);
-}
-
-#nav-bar{
-    background-color: rgba(39, 39, 37, 0.797);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 15vh;
-    gap: 5vh;
-}
-
-#nav-bar .nav-col.izq {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: left;
-    margin-left: 5vh;
-}
-
-#nav-bar .nav-col.izq a{
-    padding: 0vh 3vh 0vh 2vh;
-    font-size: 3vh;
-}
-
-#nav-bar .nav-col.der {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: right;
-    margin-right: 5vh;
-}
-
-#nav-bar .nav-col.der a{
-    padding: 0vh 2vh 0vh 2vh;
-    font-size: 2vh;
-}
-#nav-bar .nav-col.der i{
-    margin: 1vh;
-    font-size: 3vh;
-}
-
-#nav-bar .nav-col.logo{
-    height: 20vh;
-    display: grid;
-    justify-content: center;
-    position: relative;
-    top: 4vh;
-}
-
-#nav-bar .nav-col.logo img{
-    height: 20vh;
-}
-
-figcaption{
-    display: none;
-}
-
-.fa-regular.fa-user{
-    color: rgb(202, 132, 2);
-    border: none;
-    border-radius: 25%;
-    cursor: pointer;
-    transition: 1s;
-}
-.fa-regular.fa-user:hover{
-    background-color: blue;
-}
-*******************/
 
 			/******************
 				HEADER STYLE
@@ -124,7 +49,7 @@ figcaption{
     height: 15vh;
     display: grid;
     grid-template-columns: 4fr 2fr 4fr;
-    font-size: 2.7vh;
+    font-size: 2.5vh;
 }
 
 #nav-bar .nav-col.izq {
@@ -137,6 +62,14 @@ figcaption{
 #nav-bar .nav-col.izq a{
     margin: 0 3vh 1vh 8vh;
     color: rgb(202, 132, 2);
+}
+
+.nav-col.izq .rutas{
+    transition: all .5s;
+}
+.nav-col.izq .rutas:hover{
+    font-weight: bold;
+    font-size: 2.7vh;
 }
 
 #nav-bar .nav-col.logo{
@@ -156,12 +89,6 @@ figcaption{
     
 }
 
-.user-despleg .cart{
-    background-color: aqua;
-    margin: 0.5vh, 4vh, 0vh, 4vh;
-}
-
-
 .nav-col.izq .search-box {
     background-color: none;
     height: 4.5vh;
@@ -171,7 +98,7 @@ figcaption{
 }
 
 .nav-col.izq .search-box:hover > .search-txt {
-    width: 40vh;
+    width: 25vh;
     background-color: rgba(39, 39, 37, 0.797);
     border: 1px solid rgb(202, 132, 2);
 }
@@ -203,28 +130,48 @@ figcaption{
     color: rgb(202, 132, 2);
 }
   
-  .user-despleg {
-    background: none;
+
+
+.nav-col.der .fa-solid {
+    transform: translate(-5vh, 1vh);
+    padding: 5px;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.nav-col.der .fa-solid:hover {
+    border: 1px solid rgb(202, 132, 2);
+}
+
+
+.user-despleg, .cart {
     color: rgb(202, 132, 2);
-  }
-  .user-despleg li {
+}
+
+.user-despleg li {
     display: none;
-    color: rgb(202, 132, 2);
-    border: 1px , solid, rgb(202, 132, 2);
     border-radius: 2rem;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0;
     text-align: center;
-  }
+    border: 1px solid rgb(202, 132, 2);
+    margin-top: 5%;
+}
 
-  .user-despleg:hover > li{
+.user-despleg a {
+    color: rgb(202, 132, 2);
+    transition: all .5s;
+}
+.user-despleg:hover > li{
     display: block;
-    position: absolute;
-  }
+}
 
-  .nav-col.der > li:hover .lnb {
-    display: block;
+.user-despleg a:hover{
     
-  }
+    font-weight: bold;
+    font-size: 2.7vh;
+}
   
 
 
