@@ -1,0 +1,78 @@
+/******************
+	MEDIAQUERYs 
+*******************/
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    #nav-bar {
+        display: none;
+    }
+
+    #goldTitle {
+        font-size: 40%;
+    }
+
+    #silverTitle {
+        font-size: 30%;
+        margin-left: 3%;
+    }
+
+    .featured-prod{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        height: auto;
+    }
+
+    .fp-box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .fp-box img {
+        width: 50%;
+        height: fit-content
+    }
+
+    .fp-box #desc {
+        display: flex;
+        width: 100%;
+    }
+
+    #desc a.line.uno{
+        font-size: small;
+    } 
+    #desc a.line.dos{
+        font-size: small;
+    } 
+    #desc a.line.tres{
+        font-size: small;
+    } 
+    #desc a.line.cuatro{
+        font-size: small;
+    }
+
+
+    #burger-container {
+        display: inherit;
+    }
+
+    .search-box.resp {
+        display: inherit;
+    }
+
+    .search-btn {
+        transform: translateX(0vh);
+        text-decoration: none;
+        color: var(--main-color);
+    }
+
+    .our-brands {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+}

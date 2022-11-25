@@ -5,8 +5,8 @@
 }
 
 /******************
-				RESET STYLE
-			*******************/
+	RESET STYLE
+*******************/
 
 
 * {
@@ -28,8 +28,8 @@ html {
 
 
 /******************
-				HEADER STYLE
-			*******************/
+	HEADER STYLE
+*******************/
 
 
 /* Titulos  */
@@ -360,8 +360,8 @@ html {
 
 
 /******************
-				BODY STYLE
-			*******************/
+	BODY STYLE
+*******************/
 
 
 body {
@@ -378,99 +378,126 @@ body {
 }
 
 /* Featured Products Section */
-
-.featured-prod {
+.featured-prod{
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     background-color: var(--bg-color);
-
-}
-
-.fp-container {
     height: auto;
-    width: 100vw;
+    padding-bottom: 10px;
 }
 
+.fp-box{
+    width: 20vw;
+}
 
-.featured-prod img {
+.fp-box img{
+    height: auto;
     width: 100%;
-    transition: all 1s;
 }
 
-.featured-prod #desc {
+.fp-box #desc{
     display: flex;
     flex-direction: column;
-    justify-self: center;
     text-align: center;
-
 }
 
-#desc #line-1 {
+a.line {
+    text-decoration: none;
+}
+a.line.uno{
     font-size: 1rem;
     color: var(--main-color);
     font-weight: bold;
 }
 
-#desc #line-2 {
+a.line.dos {
     font-size: .8rem;
     color: var(--main-color);
     font-weight: normal;
     font-style: italic;
 }
 
-#desc #line-3 {
+a.line.tres {
     font-size: .8rem;
     color: var(--sec-color);
     font-weight: bold;
 }
 
-#desc #line-4 {
+a.line.cuatro {
     font-size: .6rem;
     color: var(--sec-color);
     text-decoration: line-through;
-}
-
-.featured-prod img:hover {
-    opacity: 50%;
-    width: 99%;
-    height: 99%;
 }
 
 /* Our Brands Section */
 
 .our-brands {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100vw;
+    justify-items: center;
+    padding: 2rem 0rem 4rem 0rem;
 }
 
-#cont-brands {
+.our-brands .cont-brands{
     display: flex;
-    align-items: center;
-    justify-self: center;
-    height: auto;
-    width: 10vw;
-    border: 2px solid #272725;
-    background-color: var(--bg-color);
-    margin: 10px;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: .5rem;
+    width: 50%;
     transition: all 1s;
+    background-color: var(--bg-color);
 }
 
-#cont-brands img {
+.cont-brands img{
     width: 100%;
 }
 
-#cont-brands:hover {
-    background-color: var(--main-color);
+.cont-brands:hover{
+    border: 4px solid var(--main-color);
     border-radius: 1rem;
 }
 
+
 /* Separator Section */
+.banner-space{
+    display: flex;
+    flex-direction: column;
+}
 
 .banner-space img {
     width: 100vw;
     height: auto;
     margin-top: 2rem;
+}
+
+#banner-desc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-70vh);
+}
+#banner-desc a{
+    text-decoration: none;
+}
+
+#banner-desc .line.tres{
+    background-color: var(--bg-color);
+}
+
+#banner-desc .line.dos{
+    padding: 8px;
+    color: var(--sec-color);
+    border: 1px solid var(--sec-color);
+    border-radius: 1rem;
+    transition: all 0.8s;
+}
+
+#banner-desc .line.dos:hover{
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 
 /******************
@@ -747,59 +774,3 @@ body {
 }
 
 
-/******************
-	MEDIAQUERYs 
-*******************/
-
-@media (min-width: 320px) and (max-width: 1024px) {
-    #nav-bar {
-        display: none;
-    }
-
-    #goldTitle {
-        font-size: 40%;
-    }
-
-    #silverTitle {
-        font-size: 30%;
-        margin-left: 3%;
-    }
-
-    .featured-prod {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        columns: auto auto auto;
-        gap: 10px;
-    }
-
-    .fp-container {
-        width: 100vw;
-        height: 40vh;
-    }
-
-
-    #burger-container {
-        display: inherit;
-    }
-
-    .search-box.resp {
-        display: inherit;
-    }
-
-    .search-btn {
-        transform: translateX(0vh);
-        text-decoration: none;
-        color: var(--main-color);
-    }
-
-    .desc-container {
-        display: none;
-    }
-
-
-    .our-brands {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
