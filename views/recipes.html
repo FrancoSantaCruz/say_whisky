@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <script src="https://kit.fontawesome.com/60811efc65.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./public/css/style.css">
-    
-        <title>Say Whisky!</title>
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <!--
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/60811efc65.js" crossorigin="anonymous"></script>
+
+    <title>Say Whisky!</title>
+
+    <!-- CSS STYLES-->
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/mediaQuerys.css">
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <!--
             Cinzel Font & Philosopher
             Cinzel Tittle
             Philosopher Text
         -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Philosopher&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
-    
-    </head>
-    
-    <body class="index-body">
-        <header id="index-header">
-            <nav id="nav-bar">
-    
-                <div class="nav-col izq">
-                    <li><a href="./index.html" class="indice">Home</a></li>
-                    <li><a href="./product.html" class="indice">Products</a></li>
-                    <li><a href="./recipes.html" class="indice">Recipes</a></li>
-                    <div class="search-box">
-                        <input class="search-txt" type="text" name="" placeholder="Look for Happiness">
-                        <a href="#" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Philosopher&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="index-body">
+    <header id="index-header">
+        <nav id="nav-bar">
+
+            <div class="nav-col izq">
+                <li><a href="../home.html" class="indice">Home</a></li>
+                <li><a href="./product.html" class="indice">Products</a></li>
+                <li><a href="./recipes.html" class="indice">Recipes</a></li>
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="" placeholder="Look for Happiness">
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
                 </div>
-    
-    
-    
-                <figure class="nav-col logo">
-                    <a href='./home.html'><img src="./public/assets/LogoSVG2.svg" alt="Logo header"></a>
-                </figure>
-                <div class="nav-col der">
-                    <label class="dropdown">
-                        <div class="dd-button">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <input type="checkbox" class="dd-input" id="test">
-                        <ul class="dd-menu">
-                            <li>Action</li>
-                            <li>Another action</li>
-                            <li>Something else here</li>
-                        </ul>
-                    </label>
+            </div>
+
+
+
+            <figure class="nav-col logo">
+                <a href='../home.html'><img src="../public/assets/LogoSVG2.svg" alt="Logo header"></a>
+            </figure>
+
+            <div class="nav-col der">
+                <label class="dropdown">
                     <div class="dd-button">
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <i class="fa-solid fa-user"></i>
                     </div>
+                    <input type="checkbox" class="dd-input" id="test">
+                    <ul class="dd-menu">
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./register.html">Sign Up</a></li>
+                    </ul>
+                </label>
+                <div class="dd-button">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
-    
-            </nav>
-            <div id="burger-container">
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-    
-                    <ul class="menu__box">
-                        <div class="test">
+            </div>
+
+        </nav>
+        <div id="burger-container">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li>
+                        <div class="menu__item">
                             <div class="search-box resp">
                                 <input class="search-txt" type="text" name="" placeholder="Look for Happiness">
                                 <a href="#" class="search-btn">
@@ -81,73 +89,83 @@
                                 </a>
                             </div>
                         </div>
-                        <li><a class="menu__item" href="#">Home</a></li>
-                        <li><a class="menu__item" href="#">Products</a></li>
-                        <li><a class="menu__item" href="#">Recipes</a></li>
-                        <hr>
-                        <li><a class="menu__item" href="#">Sign Up</a></li>
-                        <li><a class="menu__item" href="#">Login</a></li>
-                        <li><a class="menu__item" href="#">Cart</a></li>
-                    </ul>
-                </div>
+                    </li>
+                    <li><a class="menu__item" href="../home.html">Home</a></li>
+                    <li><a class="menu__item" href="./product.html">Products</a></li>
+                    <li><a class="menu__item" href="./recipes.html">Recipes</a></li>
+                    <hr>
+                    <li><a class="menu__item" href="./register.html">Sign Up</a></li>
+                    <li><a class="menu__item" href="./login.html">Login</a></li>
+                    <li><a class="menu__item" href="./cart.html">Cart</a></li>
+                </ul>
             </div>
-        </header>
-    
-    <div class="RecipiesTitle">
-        <h1><a id="TituloGold">DISCOVER </a><a id="TituloSilver">New delicious recipies</a></h1>
-    </div>
-
-    <div class="fila">
-        <div class="columna">
-            <a href="./index.html"><img src="../public/assets/recipes/jim_beam_beam_bourbon_sour.jpg"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/beam_tonic_20150620_L.jpg"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/berry-julip.jpg"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/bloody_beam_20150620_L.jpg"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/JB Red Stag Highball.jpg"></a>
+        </div>
+    </header>
+    <main>
+        <div class="titles">
+            <a id="goldTitle">DISCOVER </a> <a id="silverTitle">New delicious recipies</a>
         </div>
 
-        <div class="columna">
-            <a href="./index.html"><img src="../public/assets/recipes/JB Soda Highball.jpg"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/JBB & Soda Cocktail_0.png"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/JBP & Soda Cocktail.png"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/Jim Beam Bourbon Cream Hot Chocolate.jpg"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/Jim Beam Bourbon Cream On the Rocks.jpg"></a>
-            <a href="./index.html"><img src="../public/assets/recipes/7832_jim_beam_orleans_beauty_i.jpg"></a>
+        <div class="recetas-container">
+            <div class="recetas">
+                <a href="./index.html" class="recipe-img A"><img src="../public/assets/recipess/A Jim-Beam-Orange-Julep.jpg"></a>
+                <a href="./index.html" class="recipe-img B"><img src="../public/assets/recipess/B Jim-Beam-Orange-Crush.jpg"></a>
+                <a href="./index.html" class="recipe-img C"><img src="../public/assets/recipess/C Jim-Beam-Orange-You-Glad.jpg"></a>
+                <a href="./index.html" class="recipe-img D"><img src="../public/assets/recipess/D Jim-Beam-Orange-Ginger-Sour.jpg"></a>
+                <a href="./index.html" class="recipe-img E"><img src="../public/assets/recipess/E Jim Beam Bourbon Cream On the Rocks.jpg"></a>
+                <a href="./index.html" class="recipe-img F"><img src="../public/assets/recipess/F Jim-Beam-Orange-Mule.jpg"></a>
+                <a href="./index.html" class="recipe-img G"><img src="../public/assets/recipess/G kentucky sunrise.jpg"></a>
+                <a href="./index.html" class="recipe-img H"><img src="../public/assets/recipess/H Jim Beam Bourbon Cream Hot Chocolate.jpg"></a>
+                <a href="./index.html" class="recipe-img I"><img src="../public/assets/recipess/I beam_and_cola.jpg"></a>
+                <a href="./index.html" class="recipe-img J"><img src="../public/assets/recipess/J JB & Ginger Cocktail_1.png"></a>
+                <a href="./index.html" class="recipe-img K"><img src="../public/assets/recipess/K jim_beam_cranberry_cooler_20150620_L.jpg"></a>
+                <a href="./index.html" class="recipe-img L"><img src="../public/assets/recipess/L Cocktail_Detail_Jim_Beam_Black_Sour.jpg"></a>
+                <a href="./index.html" class="recipe-img M"><img src="../public/assets/recipess/M JBA & Soda Cocktail_1.png"></a>
+                <a href="./index.html" class="recipe-img N"><img src="../public/assets/recipess/N JB Orange Highball.jpg"></a>
+                <a href="./index.html" class="recipe-img Ñ"><img src="../public/assets/recipess/Ñ jim_beam_amaretto_sour.jpg"></a>
+                <a href="./index.html" class="recipe-img O"><img src="../public/assets/recipess/O JB Soda Highball.jpg"></a>
+                <a href="./index.html" class="recipe-img P"><img src="../public/assets/recipess/P JB Red Stag Highball.jpg"></a>
+                <a href="./index.html" class="recipe-img Q"><img src="../public/assets/recipess/Q JBB & Soda Cocktail_0.png"></a>
+                <a href="./index.html" class="recipe-img R"><img src="../public/assets/recipess/R JBP & Soda Cocktail.png"></a>
+                <a href="./index.html" class="recipe-img S"><img src="../public/assets/recipess/S Shot04_JB_Orange_w3d_Alt@2x.jpg"></a>
+                <a href="./index.html" class="recipe-img T"><img src="../public/assets/recipess/T jb_citrus_highball_20160309_au_l_0.jpg"></a>
+                <a href="./index.html" class="recipe-img U"><img src="../public/assets/recipess/U jim_beam_beam_bourbon_sour.jpg"></a>
+            </div>
         </div>
-    </div>
-
-    <footer>
+    </main>
+    <footer id="index-footer">
         <section class="foot">
-            <div class="bloqueUno">
+            <div class="bloque contact">
                 <div id="contacts">
-                    <a href=''> <i class="fab fa-instagram"></i></a>
+                    <a href='https://www.instagram.com/politosc/'> <i class="fab fa-instagram"></i></a>
                     <a href=''> <i class="fab fa-facebook-square"></i></a>
-                    <a href=''> <i class="fab fa-linkedin"></i></a>
+                    <a href='https://www.linkedin.com/in/francoscz/'> <i class="fab fa-linkedin"></i></a>
                 </div>
                 <div id="informacion">
-                    <p><i class="far fa-envelope"></i>contacto@saywhisky.com</p>
-                    <p>Opening hours: Monday to Friday (9hs to 18hs)</p>
-                    <p>0800-888-0600</p>
+                    <a><i class="far fa-envelope"></i>contacto@saywhisky.com</a>
+                    <a>Opening hours: </a>
+                    <a>Monday to Friday (9hs to 18hs)</a>
+                    <a>0800-888-0600</a>
                 </div>
             </div>
 
 
-            <div class="bloqueDos">
+            <div class="bloque logo">
                 <figure>
-                    <a href='/'><img src="../public/assets/LogoSVG2.svg" alt="Logo header" width="5%" height="5%"></a>
+                    <a href='/'><img src="../public/assets/LogoSVG.svg" alt="Logo header" width="5%" height="5%"></a>
                 </figure>
                 <div>
-                    <a href="/">Home</a>
-                    <a href="/products">Products</a>
-                    <a href="/aboutus">Recipes</a>
+                    <a href="../home.html">Home</a>
+                    <a href="./product.html">Products</a>
+                    <a href="./recipes.html">Recipes</a>
                 </div>
             </div>
 
 
-            <div class="bloqueTres">
-                <p><a href="/preguntasfrecuentes">Frequent questions</a></p>
-                <p><a href="/envios">Shipments</a></p>
-                <p>Payment Methods:</p>
+            <div class="bloque payment">
+                <a href="#">Frequent questions</a>
+                <a href="#">Shipments</a>
+                <a>Payment Methods:</a>
                 <div>
                     <i class="fab fa-cc-paypal"></i>
                     <i class="fab fa-cc-amex"></i>
@@ -157,16 +175,6 @@
             </div>
         </section>
 
-
-        <section class="copyright">
-            <p>
-                Copyright ©2020. All rights reserved.
-
-                <a href="/tyc">Terms and Conditions</a>
-                |
-                <a href="/politicasdeprivacidad">Privacy Policy</a>
-            </p>
-        </section>
     </footer>
 </body>
 

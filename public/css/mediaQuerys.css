@@ -16,14 +16,30 @@
         margin-left: 3%;
     }
 
-    .featured-prod{
+    #burger-container {
+        display: inherit;
+    }
+
+    .search-box.resp {
+        display: inherit;
+    }
+
+    .search-btn {
+        transform: translateX(0vh);
+        text-decoration: none;
+        color: var(--main-color);
+    }
+
+    /* Featured Products */
+
+    .featured-prod {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         height: auto;
     }
 
-    .fp-box{
+    .fp-box {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -41,33 +57,25 @@
         width: 100%;
     }
 
-    #desc a.line.uno{
-        font-size: small;
-    } 
-    #desc a.line.dos{
-        font-size: small;
-    } 
-    #desc a.line.tres{
-        font-size: small;
-    } 
-    #desc a.line.cuatro{
+    /* Utils */
+
+    #desc a.line.uno {
         font-size: small;
     }
 
-
-    #burger-container {
-        display: inherit;
+    #desc a.line.dos {
+        font-size: small;
     }
 
-    .search-box.resp {
-        display: inherit;
+    #desc a.line.tres {
+        font-size: small;
     }
 
-    .search-btn {
-        transform: translateX(0vh);
-        text-decoration: none;
-        color: var(--main-color);
+    #desc a.line.cuatro {
+        font-size: small;
     }
+
+    /* Brands */
 
     .our-brands {
         display: grid;
@@ -75,4 +83,48 @@
         grid-template-rows: 1fr 1fr;
         gap: 10px;
     }
+
+
+    /* Section Separator */
+
+    #banner-desc {
+        transform: translateY(-20vh);
+    }
+
+    #banner-desc a.line.dos {
+        font-size: x-small;
+    }
+
+    #banner-desc a.line.tres {
+        font-size: x-small;
+    }
+
+    /* Footer */
+
+    .bloque.contact i{
+        font-size: x-small;
+    }
+
+    .bloque.contact a{
+        font-size: x-small;
+    }
+
+    .bloque.logo img{
+        width: 3rem;
+        height: auto;
+    }
+    
+    .bloque.logo a{
+        font-size: x-small;
+    }
+
+    .bloque.payment a{
+        font-size: x-small;
+    }
+
+    .bloque.payment i{
+        font-size: x-small;
+    }
+
+    
 }
