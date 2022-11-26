@@ -126,5 +126,111 @@
         font-size: x-small;
     }
 
+    /* Recipes */
+
+    .recetas-container .recetas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(21, 1fr);
+    }
+
+    .recetas-container .recetas .recipe-img{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .recetas-container .recetas img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .recetas-container .recetas .recipe-img.A{
+        grid-row:unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.B{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.C{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.D{
+        grid-row:unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.E{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.F{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.G{
+        grid-row:unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.H{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.I{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.J{
+        grid-row:unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.K{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.L{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.M{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.N{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.Ñ{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.O{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.P{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.Q{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.R{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.S{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.T{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .recetas-container .recetas .recipe-img.U{
+        grid-row: unset;
+        grid-column: unset;
+    }
     
 }
