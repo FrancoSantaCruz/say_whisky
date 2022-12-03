@@ -3,16 +3,21 @@
 *******************/
 
 @media (min-width: 320px) and (max-width: 1024px) {
+    html{
+        font-size: 60%;
+    }
+
     #nav-bar {
         display: none;
     }
 
     #goldTitle {
-        font-size: 40%;
+        /*font-size: 40%;*/
+        
     }
 
     #silverTitle {
-        font-size: 30%;
+        /*font-size: 30%;*/
         margin-left: 3%;
     }
 
@@ -233,4 +238,12 @@
         grid-column: unset;
     }
     
+
+    /* LOGIN & REGISTER */
+
+    .index-body.login #views-main{
+        width: 96vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 }

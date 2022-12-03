@@ -1,0 +1,181 @@
+.recipes-main {
+    width: 100vw;
+    .recipes-container {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(21, auto) !important;
+        width: 80%;
+        gap: 10px;
+        margin: 0 auto;
+
+        & .recipe {
+            & .recipe-desc {
+                opacity: 0;
+                display: block;
+                position: absolute;
+                transition: all 0.6s;
+                & a{
+                    color: $ppal-color;
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    background-color: $bg-color;
+                    border-radius: 0.6rem;
+                    padding: 0.5rem;
+                    border-left: 1px solid $ppal-color;
+                    border-right: 1px solid $ppal-color;
+                    &:hover{
+                        box-shadow: 0rem 0rem 1rem $ppal-color;
+                    }
+                }
+                
+            }
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                transition: all 1s;
+            }
+
+            &:hover> img{
+                opacity: 40%;
+                border-radius: 2rem;
+            }
+            &:hover>.recipe-desc {
+                opacity: 1;
+            }
+
+            &.A {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.B {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.C {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.D {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.E {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+
+            }
+
+            &.F {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.G {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.H {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.I {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.J {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.K {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.L {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.M {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.N {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.Ñ {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.O {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.P {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.Q {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.R {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.S {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.T {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+
+            &.U {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+            }
+        }
+    }
+}

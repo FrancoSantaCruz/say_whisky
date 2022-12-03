@@ -1,0 +1,212 @@
+@media (min-width: 1024px) {
+
+    html {
+        font-size: 150%;
+    }
+
+    #nav-bar {
+        display: grid;
+    }
+
+    #burger-container {
+        display: none;
+    }
+
+    /* Featured Products */
+
+    .featured-prod {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: 1fr !important;
+        height: auto;
+    }
+
+    /* Brands */
+
+    .our-brands {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr) !important;
+        gap: 10px;
+    }
+
+    /* Register */
+
+    .registro {
+        & .form-container {
+            width: 30%;
+        }
+    }
+
+    /* Products */
+    .product-main {
+        width: 100vw;
+
+        .products-container {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr) !important;
+            grid-template-columns: repeat(3, 1fr);
+            width: 80%;
+
+
+            & .single-product {
+                display: flex;
+                flex-direction: column;
+
+                &:hover>.prod-img {
+                    border: 1px solid $ppal-color;
+                    border-bottom: 4px solid $ppal-color;
+                    width: 100.5%;
+
+                }
+            }
+        }
+    }
+
+    /* Recipes */
+    .recipes-main {
+        .recipes-container {
+            display: grid;
+            grid-template-columns: repeat(4, auto) !important;
+            grid-template-rows: repeat(10, auto) !important;
+            width: fit-content;
+    
+            & .recipe {
+                
+                &.A {
+                    display: grid;
+                    grid-row: 1/3;
+                    grid-column: 1/3;
+                }
+    
+                &.B {
+                    display: grid;
+                    grid-row: 1/2;
+                    grid-column: 3/4;
+                }
+    
+                &.C {
+                    display: grid;
+                    grid-row: 1/3;
+                    grid-column: 4/5;
+                }
+    
+                &.D {
+                    display: grid;
+                    grid-row: 2/3;
+                    grid-column: 3/4;
+                }
+    
+                &.E {
+                    display: grid;
+                    grid-row: 3/4;
+                    grid-column: 1/2;
+    
+                }
+    
+                &.F {
+                    display: grid;
+                    grid-row: 3/4;
+                    grid-column: 2/3;
+                }
+    
+                &.G {
+                    display: grid;
+                    grid-row: 3/5;
+                    grid-column: 3/5;
+                }
+    
+                &.H {
+                    display: grid;
+                    grid-row: 4/6;
+                    grid-column: 1/2;
+                }
+    
+                &.I {
+                    display: grid;
+                    grid-row: 4/5;
+                    grid-column: 2/3;
+                }
+    
+                &.J {
+                    display: grid;
+                    grid-row: 5/6;
+                    grid-column: 2/3;
+                }
+    
+                &.K {
+                    display: grid;
+                    grid-row: 5/6;
+                    grid-column: 3/5;
+                }
+    
+                &.L {
+                    display: grid;
+                    grid-row: 6/8;
+                    grid-column: 1/3;
+                }
+    
+                &.M {
+                    display: grid;
+                    grid-row: 6/7;
+                    grid-column: 3/4;
+                }
+    
+                &.N {
+                    display: grid;
+                    grid-row: 6/8;
+                    grid-column: 4/5;
+                }
+    
+                &.Ñ {
+                    display: grid;
+                    grid-row: 7/8;
+                    grid-column: 3/4;
+                }
+    
+                &.O {
+                    display: grid;
+                    grid-row: 8/9;
+                    grid-column: 1/2;
+                }
+    
+                &.P {
+                    display: grid;
+                    grid-row: 8/9;
+                    grid-column: 2/3;
+                }
+    
+                &.Q {
+                    display: grid;
+                    grid-row: 8/10;
+                    grid-column: 3/5;
+                }
+    
+                &.R {
+                    display: grid;
+                    grid-row: 9/11;
+                    grid-column: 1/2;
+                }
+    
+                &.S {
+                    display: grid;
+                    grid-row: 9/10;
+                    grid-column: 2/3;
+                }
+    
+                &.T {
+                    display: grid;
+                    grid-row: 10/11;
+                    grid-column: 2/3;
+                }
+    
+                &.U {
+                    display: grid;
+                    grid-row: 10/11;
+                    grid-column: 3/5;
+                }
+            }
+        }
+    }
+
+}

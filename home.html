@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/60811efc65.js" crossorigin="anonymous"></script>
 
-    <title>Say Whisky!</title>
+    <title>Say Whisky! | Home</title>
 
-    <!-- CSS STYLES-->
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/mediaQuerys.css">
-
+    <meta name="keywords" content="whisky, whiskies, online, venta, alcohol, envíos, bourbon">
+    <meta name="description" content="Venta ONLINE de bebidas alcohólicas. Casa especializada en whisky seleccionados e importados.">
+    <!-- SASS -->
+    <link rel="stylesheet" href="/public/sass/home.css">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,43 +35,7 @@
 
 <body class="index-body">
     <header id="index-header">
-        <nav id="nav-bar">
 
-            <div class="nav-col izq">
-                <li><a href="./home.html" class="indice">Home</a></li>
-                <li><a href="./views/product.html" class="indice">Products</a></li>
-                <li><a href="./views/recipes.html" class="indice">Recipes</a></li>
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Look for Happiness">
-                    <a href="#" class="search-btn">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <figure class="nav-col logo">
-                <a href='./home.html'><img src="./public/assets/LogoSVG2.svg" alt="Logo header"></a>
-            </figure>
-
-            <div class="nav-col der">
-                <label class="dropdown">
-                    <div class="dd-button">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <input type="checkbox" class="dd-input" id="test">
-                    <ul class="dd-menu">
-                        <li><a href="./views/login.html">Login</a></li>
-                        <li><a href="./views/register.html">Sign Up</a></li>
-                    </ul>
-                </label>
-                <div class="dd-button">
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-            </div>
-
-        </nav>
         <div id="burger-container">
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -82,12 +46,12 @@
                 <ul class="menu__box">
                     <li>
                         <div class="menu__item">
-                            <div class="search-box resp">
-                                <input class="search-txt" type="text" name="" placeholder="Look for Happiness">
+                            <div class="search-container">
+                                <input class="searchbox" type="text" name="" placeholder="Look for Happiness">
                                 <a href="#" class="search-btn">
                                     <i class="fas fa-search"></i>
                                 </a>
-                            </div>
+                            </div>            
                         </div>
                     </li>
                     <li><a class="menu__item" href="./home.html">Home</a></li>
@@ -100,6 +64,46 @@
                 </ul>
             </div>
         </div>
+
+        <nav id="nav-bar">
+            <div class="nav-col izq">
+                <li><a href="./home.html" class="indice">Home</a></li>
+                <li><a href="./views/product.html" class="indice">Products</a></li>
+                <li><a href="./views/recipes.html" class="indice">Recipes</a></li>
+
+            </div>
+
+            <figure class="nav-col logo">
+                <a href='./home.html'><img src="./public/assets/LogoSVG2.svg" alt="Logo header"></a>
+            </figure>
+
+            <div class="nav-col der">
+
+                <div class="search-container">
+                    <input class="searchbox" type="text" name="" placeholder="Look for Happiness">
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+
+                <label class="dropdown">
+                    <div class="dd-button">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="checkbox" class="dd-input" id="test">
+                    <ul class="dd-menu">
+                        <li><a href="./views/login.html">Login</a></li>
+                        <li><a href="./views/register.html">Sign Up</a></li>
+                    </ul>
+                </label>
+
+                <div class="dd-button">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+
+        </nav>
+
     </header>
 
     <main id="index-main">
@@ -166,7 +170,7 @@
         </div>
         <section class="featured-prod">
             <div class="fp-box">
-                <img src="./public/assets/sale1.png" id="image uno">
+                <img src="./public/assets/products/sale1.png" id="image uno">
                 <div id="desc">
                     <a class="line uno">Grant's Triple Wood</a>
                     <a class="line dos">Blended Scotch Whisky</a>
@@ -175,7 +179,7 @@
                 </div>
             </div>
             <div class="fp-box">
-                <img src="./public/assets/sale2.png" id="image dos">
+                <img src="./public/assets/products/sale2.png" id="image dos">
                 <div id="desc">
                     <a class="line uno">Jack Daniels</a>
                     <a class="line dos">Tennessee Whiskey</a>
@@ -184,7 +188,7 @@
                 </div>
             </div>
             <div class="fp-box">
-                <img src="./public/assets/sale3.png" id="image tres">
+                <img src="./public/assets/products/sale3.png" id="image tres">
                 <div id="desc">
                     <a class="line uno">Grant's Triple Wood</a>
                     <a class="line dos">Blended Scotch Whisky</a>
@@ -193,24 +197,25 @@
                 </div>
             </div>
             <div class="fp-box">
-                <img src="./public/assets/sale4.png" id="image cuatro">
+                <img src="./public/assets/products/sale4.png" id="image cuatro">
                 <div id="desc">
                     <a class="line uno">Jack Daniels</a>
                     <a class="line dos">Tennessee Whiskey</a>
                     <a class="line tres">ARS$8799</a>
                     <a class="line cuatro">ARS$11299</a>
-                </div>
-            </div>
-            <div class="fp-box">
-                <img src="./public/assets/sale1.png" id="image cinco">
-                <div id="desc">
-                    <a class="line uno">Grant's Triple Wood</a>
-                    <a class="line dos">Blended Scotch Whisky</a>
-                    <a class="line tres">ARS$6999</a>
-                    <a class="line cuatro">ARS$8499</a>
                 </div>
             </div>
         </section>
+
+        
+        <section class="banner-space">
+            <img src="./public/assets/breath.jpg">
+            <div id="banner-desc">
+                <a class="phrase">The world has changed dramatically. But our quality never has</a>
+                <div class="btn"><a href="./views/recipes.html" class="line dos">Explore our recipies</a></div>
+            </div>
+        </section>
+
         <div class="titles">
             <a id="goldTitle">DISCOVER </a> <a id="silverTitle"> Our Brands</a>
         </div>
@@ -223,13 +228,6 @@
             <div class="cont-brands"><img src="./public/assets/brands/williamlawson.png"></div>
         </section>
 
-        <section class="banner-space">
-            <img src="./public/assets/breath.jpg">
-            <div id="banner-desc">
-                <a class="line tres">The world has changed dramatically. But our quality never has</a>
-                <div class="btn"><a href="./views/recipes.html" class="line dos">Explore our recipies</a></div>
-            </div>
-        </section>
 
     </main>
 
@@ -261,7 +259,6 @@
                 </div>
             </div>
 
-
             <div class="bloque payment">
                 <a href="#">Frequent questions</a>
                 <a href="#">Shipments</a>
@@ -274,7 +271,6 @@
                 </div>
             </div>
         </section>
-
     </footer>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

@@ -1,247 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <script src="https://kit.fontawesome.com/60811efc65.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./public/css/style.css">
-    
-        <title>Say Whisky!</title>
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <!--
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/60811efc65.js" crossorigin="anonymous"></script>
+
+    <title>Say Whisky! | Products</title>
+
+    <meta name="keywords" content="whisky, whiskies, online, venta, alcohol, envíos, bourbon">
+    <meta name="description"
+        content="Venta ONLINE de bebidas alcohólicas. Casa especializada en whisky seleccionados e importados.">
+    <!-- SASS -->
+    <link rel="stylesheet" href="../public/sass/home.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <!--
             Cinzel Font & Philosopher
             Cinzel Tittle
             Philosopher Text
         -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Philosopher&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
-    
-    </head>
-    
-    <body class="index-body">
-        <header id="index-header">
-            <nav id="nav-bar">
-    
-                <div class="nav-col izq">
-                    <li><a href="./index.html" class="indice">Home</a></li>
-                    <li><a href="./product.html" class="indice">Products</a></li>
-                    <li><a href="./recipes.html" class="indice">Recipes</a></li>
-                    <div class="search-box">
-                        <input class="search-txt" type="text" name="" placeholder="Look for Happiness">
-                        <a href="#" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </div>
-                </div>
-    
-    
-    
-                <figure class="nav-col logo">
-                    <a href='./home.html'><img src="./public/assets/LogoSVG2.svg" alt="Logo header"></a>
-                </figure>
-                <div class="nav-col der">
-                    <label class="dropdown">
-                        <div class="dd-button">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <input type="checkbox" class="dd-input" id="test">
-                        <ul class="dd-menu">
-                            <li>Action</li>
-                            <li>Another action</li>
-                            <li>Something else here</li>
-                        </ul>
-                    </label>
-                    <div class="dd-button">
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-    
-            </nav>
-            <div id="burger-container">
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-    
-                    <ul class="menu__box">
-                        <div class="test">
-                            <div class="search-box resp">
-                                <input class="search-txt" type="text" name="" placeholder="Look for Happiness">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Philosopher&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="index-body">
+    <header id="index-header">
+
+        <div id="burger-container">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li>
+                        <div class="menu__item">
+                            <div class="search-container">
+                                <input class="searchbox" type="text" name="" placeholder="Look for Happiness">
                                 <a href="#" class="search-btn">
                                     <i class="fas fa-search"></i>
                                 </a>
                             </div>
                         </div>
-                        <li><a class="menu__item" href="#">Home</a></li>
-                        <li><a class="menu__item" href="#">Products</a></li>
-                        <li><a class="menu__item" href="#">Recipes</a></li>
-                        <hr>
-                        <li><a class="menu__item" href="#">Sign Up</a></li>
-                        <li><a class="menu__item" href="#">Login</a></li>
-                        <li><a class="menu__item" href="#">Cart</a></li>
+                    </li>
+                    <li><a class="menu__item" href="../home.html">Home</a></li>
+                    <li><a class="menu__item" href="./product.html">Products</a></li>
+                    <li><a class="menu__item" href="./recipes.html">Recipes</a></li>
+                    <hr>
+                    <li><a class="menu__item" href="./register.html">Sign Up</a></li>
+                    <li><a class="menu__item" href="./login.html">Login</a></li>
+                    <li><a class="menu__item" href="./cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav id="nav-bar">
+            <div class="nav-col izq">
+                <li><a href="../home.html" class="indice">Home</a></li>
+                <li><a href="./product.html" class="indice">Products</a></li>
+                <li><a href="./recipes.html" class="indice">Recipes</a></li>
+
+            </div>
+
+            <figure class="nav-col logo">
+                <a href='../home.html'><img src="../public/assets/LogoSVG2.svg" alt="Logo header"></a>
+            </figure>
+
+            <div class="nav-col der">
+
+                <div class="search-container">
+                    <input class="searchbox" type="text" name="" placeholder="Look for Happiness">
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+
+                <label class="dropdown">
+                    <div class="dd-button">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="checkbox" class="dd-input" id="test">
+                    <ul class="dd-menu">
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./register.html">Sign Up</a></li>
                     </ul>
+                </label>
+
+                <div class="dd-button">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
-        </header>
-    
 
-    <main>
-        <section class="filterContainer">
-            <div id="filterss">
-                <div id="filt-izq">
-                    <p>Filters: None</p>
-                </div>
-                <div id="filt-der">
-                    <i class="fa-solid fa-table-cells"></i>
-                    <i class="fa-solid fa-table-list"></i>
-                </div>
+        </nav>
+
+    </header>
+
+
+    <main class="product-main">
+        <section class="filter-container">
+            <div id="filt-izq">
+                <a>Filters: none</a>
+            </div>
+            <div id="filt-der">
+                <i class="fa-solid fa-table-cells"></i>
+                <i class="fa-solid fa-table-list"></i>
             </div>
         </section>
 
         <section class="products-container">
-            <div id="products">
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale1.png" alt="producto#"></a>
-                    </article>
-                    <h3>Grant´s Triple Wood</h3>
-                    <h2 id="TituloGold">Blended Scotch Whisky</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
                 </div>
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale2.png" alt="producto#"></a>
-                    </article>
-                    <h3>Jack Daniels</h3>
-                    <h2 id="TituloGold">Tennessee Whiskey</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
-                </div>
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale3.png" alt="producto#"></a>
-                    </article>
-                    <h3>Johnnie Walker</h3>
-                    <h2 id="TituloGold">Red Label</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
                 </div>
             </div>
-
-            <div id="products">
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale1.png" alt="producto#"></a>
-                    </article>
-                    <h3>Grant´s Triple Wood</h3>
-                    <h2 id="TituloGold">Blended Scotch Whisky</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
                 </div>
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale2.png" alt="producto#"></a>
-                    </article>
-                    <h3>Jack Daniels</h3>
-                    <h2 id="TituloGold">Tennessee Whiskey</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
-                </div>
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale3.png" alt="producto#"></a>
-                    </article>
-                    <h3>Johnnie Walker</h3>
-                    <h2 id="TituloGold">Red Label</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
                 </div>
             </div>
-
-            <div id="products">
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale1.png" alt="producto#"></a>
-                    </article>
-                    <h3>Grant´s Triple Wood</h3>
-                    <h2 id="TituloGold">Blended Scotch Whisky</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
                 </div>
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale2.png" alt="producto#"></a>
-                    </article>
-                    <h3>Jack Daniels</h3>
-                    <h2 id="TituloGold">Tennessee Whiskey</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
                 </div>
-                <div id="recuadro-products">
-                    <article>
-                        <a href="/"><img src="../public/assets/sale3.png" alt="producto#"></a>
-                    </article>
-                    <h3>Johnnie Walker</h3>
-                    <h2 id="TituloGold">Red Label</h2>
-                    <h4>ARS$5.890</h4>
-                    <h5>$7.550</h5>
+            </div>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
+                </div>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
+                </div>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
+                </div>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
+                </div>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
+                </div>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="single-product">
+                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <div class="prod-descriptions">
+                    <div class="prod-desc uno">Johnnie Walker</div>
+                    <div class="prod-desc dos">Red Label 750ml</div>
+                    <div class="prod-desc tres">ARS$7899</div>
+                </div>
+                <div class="prod-cartBtn">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </a>
                 </div>
             </div>
 
         </section>
-
-
-
-
-
-
-
+        <section class="prod-slider">
+            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="slide-text uno">1 </div><div class="slide-text dos">of 3</div>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </section>
     </main>
 
 
 
-    <footer>
+    <footer id="index-footer">
         <section class="foot">
-            <div class="bloqueUno">
+            <div class="bloque contact">
                 <div id="contacts">
-                    <a href=''> <i class="fab fa-instagram"></i></a>
+                    <a href='https://www.instagram.com/politosc/'> <i class="fab fa-instagram"></i></a>
                     <a href=''> <i class="fab fa-facebook-square"></i></a>
-                    <a href=''> <i class="fab fa-linkedin"></i></a>
+                    <a href='https://www.linkedin.com/in/francoscz/'> <i class="fab fa-linkedin"></i></a>
                 </div>
                 <div id="informacion">
-                    <p><i class="far fa-envelope"></i>contacto@saywhisky.com</p>
-                    <p>Opening hours: Monday to Friday (9hs to 18hs)</p>
-                    <p>0800-888-0600</p>
+                    <a><i class="far fa-envelope"></i>contacto@saywhisky.com</a>
+                    <a>Opening hours: </a>
+                    <a>Monday to Friday (9hs to 18hs)</a>
+                    <a>0800-888-0600</a>
                 </div>
             </div>
 
 
-            <div class="bloqueDos">
+            <div class="bloque logo">
                 <figure>
-                    <a href='/'><img src="../public/assets/LogoSVG2.svg" alt="Logo header" width="5%" height="5%"></a>
+                    <a href='../home.html'><img src="../public/assets/LogoSVG.svg" alt="Logo header" width="5%" height="5%"></a>
                 </figure>
                 <div>
-                    <a href="/">Home</a>
-                    <a href="/products">Products</a>
-                    <a href="/aboutus">Recipes</a>
+                    <a href="../home.html">Home</a>
+                    <a href="./product.html">Products</a>
+                    <a href="./recipes.html">Recipes</a>
                 </div>
             </div>
 
-
-            <div class="bloqueTres">
-                <p><a href="/preguntasfrecuentes">Frequent questions</a></p>
-                <p><a href="/envios">Shipments</a></p>
-                <p>Payment Methods:</p>
+            <div class="bloque payment">
+                <a href="#">Frequent questions</a>
+                <a href="#">Shipments</a>
+                <a>Payment Methods:</a>
                 <div>
                     <i class="fab fa-cc-paypal"></i>
                     <i class="fab fa-cc-amex"></i>
@@ -250,18 +288,6 @@
                 </div>
             </div>
         </section>
-
-
-        <section class="copyright">
-            <p>
-                Copyright ©2020. All rights reserved.
-
-                <a href="/tyc">Terms and Conditions</a>
-                |
-                <a href="/politicasdeprivacidad">Privacy Policy</a>
-            </p>
-        </section>
     </footer>
-</body>
 
 </html>

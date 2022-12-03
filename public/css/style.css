@@ -20,12 +20,12 @@
     outline: none;
 }
 
+
 html {
     font-size: 20px;
     height: 100vh;
     width: 100vw;
 }
-
 
 /******************
 	HEADER STYLE
@@ -369,7 +369,6 @@ html {
 	BODY STYLE
 *******************/
 
-
 body {
     background-image: url("../assets/bg.jpg");
     background-position: center;
@@ -415,9 +414,8 @@ body {
 .fp-box img:hover{
     border: 1px solid black;
     opacity: 40%;
-    border-color: var(--main-color);
-    border-width: 1rem;
-    background-color: var(--sec-color);
+    border-color:transparent;
+    border-width: 0.7rem;
 }
 
 a.line {
@@ -599,118 +597,57 @@ a.line.cuatro {
     color: var(--main-color);
 }
 
-.copyright {}
-
-            /**************************
-                LOGIN & REGISTER STYLE
-            **************************/
+/**************************
+    LOGIN & REGISTER STYLE
+**************************/
 
 
-.help {
+
+
+
+.registro{
+    display: grid;
+    background-color: var(--bg-color);
+    padding: 2vw;
+    margin: 8vw 0 8vw 0;
+    border-radius: 1rem;
+    color: var(--sec-color);
+    border-left: 1px solid var(--sec-color);
+    border-right: 1px solid var(--sec-color);
+    transition: all 1s;
+}
+.registro:hover{
+    border-left: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
+}
+
+.registro:hover > .login-title{
+    color: var(--main-color);
+}
+
+.log-content{
     display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    flex-direction: column;
 }
 
-.registro {
-    background-color: rgba(82, 82, 82, 0.8);
-    border: 2px solid rgb(100, 100, 100);
-    width: 30rem;
-    border-radius: 2%;
-}
-
-.registro #ParteA label {
-    display: none;
-}
-
-.registro p {
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-    color: rgb(202, 132, 2);
-    margin: 2%;
-}
-
-.registro input {
+.login-title{
+    color: var(--sec-color);
+    font-size: 2rem;
     text-align: center;
-    font-size: 0.8rem;
-    background-color: transparent;
-    height: 1.5rem;
-    border: 1px solid rgb(100, 100, 100);
-    width: 25rem;
-    border-radius: 5%;
-    color: silver;
+    margin: 1vw;
+    transition: all 1s;
 }
 
-.registro h2 {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgb(100, 100, 100);
+.log-content input{
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem;
 }
 
-::placeholder {
-    color: rgb(202, 132, 2);
-    opacity: 1;
-}
-
-:-ms-input-placeholder {
-    color: rgb(202, 132, 2);
-}
-
-::-ms-input-placeholder {
-    color: rgb(202, 132, 2);
-}
-
-
-
-.registro #ParteB label {
-    margin: 0.3rem 0.4rem;
-    width: fit-content;
-    font-size: 0.7rem;
-}
-
-.registro #ParteB input {
-    width: 1rem;
-    background-color: rgba(82, 82, 82, 0.8);
-}
-
-.registro #ParteB p {
-    margin: 0;
-}
-
-.registro #ParteC {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.registro #ParteC input {
-    margin: 1.5em;
-    color: rgb(202, 132, 2);
-    width: 6rem;
-    cursor: pointer;
-}
-
-.log {
+.form-container{
     display: flex;
     justify-content: center;
 }
-
-.log p {
-    color: silver;
-    font-size: 0.6rem;
-}
-
-.log a {
-    margin-left: 0.2rem;
-    color: rgb(214, 214, 214);
-    text-decoration: underline;
-}
-
-
 
 /**************************
         PRODUCTS STYLE
@@ -799,7 +736,7 @@ a.line.cuatro {
         RECIPES STYLE
 ***************************/
 
-#recipes-main{
+#views-main{
     grid-column: 2/3;
 }
 

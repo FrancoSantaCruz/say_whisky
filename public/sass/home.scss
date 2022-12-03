@@ -1,0 +1,164 @@
+/* Utils */
+@import 'var';
+@import 'reset';
+@import 'styles';
+
+/* Partials */
+@import 'header';
+@import 'footer';
+
+/* Pages */
+
+@import 'login';
+@import 'register';
+@import 'recipes';
+@import 'products';
+
+@import 'media';
+
+/*	BODY STYLE  */
+
+body {
+    background-size: cover;
+    background-color:  #030301 !important;
+}
+
+#carouselExampleCaptions {
+    z-index: 9;
+}
+
+/* Featured Products Section */
+
+.featured-prod {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    border-top: 2px solid $sdo-color;
+    border-bottom: 2px solid $sdo-color;
+
+    .fp-box {
+        padding: 1rem;
+        border-bottom: 0.5px solid $sdo-color;
+
+        & img {
+            height: auto;
+            width: 100%;
+            transition: all 1s;
+            border-radius: 100%;
+            border-width: 0.1rem;
+
+            &:hover {
+                opacity: 40%;
+            }
+        }
+
+        & #desc {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+.line {
+    text-decoration: none;
+
+    &.uno {
+        font-size: 1rem;
+        color: $ppal-color;
+        font-weight: bold;
+    }
+
+    &.dos {
+        font-size: .8rem;
+        color: $ppal-color;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    &.tres {
+        font-size: .8rem;
+        color: $sdo-color;
+        font-weight: bold;
+    }
+
+    &.cuatro {
+        font-size: .8rem;
+        color: $sdo-color;
+        text-decoration: line-through;
+    }
+}
+
+/* Our Brands Section */
+
+.our-brands {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100vw;
+    justify-items: center;
+    padding: 2rem 0rem 4rem 0rem;
+
+    .cont-brands {
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+        border: 2px solid $sdo-color;
+        border-radius: .5rem;
+        width: 50%;
+        transition: all 1s;
+        background-color: $bg-color;
+
+        & img {
+            width: 100%;
+        }
+
+        &:hover {
+            border: 3px solid $ppal-color;
+            border-radius: 1rem;
+        }
+    }
+}
+
+/* Separator Section */
+.banner-space {
+    margin-top: 5rem;
+    & img {
+        width: 100vw;
+        height: auto;
+    }
+
+    #banner-desc {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        position: relative;
+        bottom: 8rem;
+
+        & a {
+            text-decoration: none;
+        }
+
+        & .phrase {
+            color: $ppal-color;
+            font-size: 1rem;
+            background-color: $bg-color;
+        }
+
+        & .btn a {
+            border: 1px solid $sdo-color;
+            padding: 0.2rem;
+            border-radius: 5px;
+            color: $sdo-color;
+            transition: all 1s;
+
+            &:hover {
+                border: 1px solid $ppal-color;
+                color: $ppal-color;
+            }
+        }
+    }
+}
+
