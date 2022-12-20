@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="../public/sass/home.css">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <!-- Animations aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--
             Cinzel Font & Philosopher
@@ -55,7 +57,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a class="menu__item" href="../home.html">Home</a></li>
+                    <li><a class="menu__item" href="../index.html">Home</a></li>
                     <li><a class="menu__item" href="./product.html">Products</a></li>
                     <li><a class="menu__item" href="./recipes.html">Recipes</a></li>
                     <hr>
@@ -68,14 +70,14 @@
 
         <nav id="nav-bar">
             <div class="nav-col izq">
-                <li><a href="../home.html" class="indice">Home</a></li>
+                <li><a href="../index.html" class="indice">Home</a></li>
                 <li><a href="./product.html" class="indice">Products</a></li>
                 <li><a href="./recipes.html" class="indice">Recipes</a></li>
 
             </div>
 
             <figure class="nav-col logo">
-                <a href='../home.html'><img src="../public/assets/LogoSVG2.svg" alt="Logo header"></a>
+                <a href='../index.html'><img src="../public/assets/LogoSVG2.svg" alt="Logo SayWhisky"></a>
             </figure>
 
             <div class="nav-col der">
@@ -121,7 +123,7 @@
 
         <section class="products-container">
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/sale1.png">
+                <img class="prod-img" src="../public/assets/products/sale1.png" alt="Product Image Grants Triple Wood">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Blended Scotch Whisky</div>
                     <div class="prod-desc dos">Grant's Triple Wood</div>
@@ -134,7 +136,7 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/sale2.png">
+                <img class="prod-img" src="../public/assets/products/sale2.png" alt="Product Image Jack Daniels">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Tennessee Whiskey</div>
                     <div class="prod-desc dos">Jack Daniel's</div>
@@ -147,7 +149,7 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/sale3.png">
+                <img class="prod-img" src="../public/assets/products/sale3.png" alt="Product Image Johnnie Walker">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Red Label 750ml</div>
                     <div class="prod-desc dos">Johnnie Walker</div>
@@ -160,7 +162,7 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/sale4.png">
+                <img class="prod-img" src="../public/assets/products/sale4.png" alt="Product Image Jeam Beam">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Signature Craft 12yo Bourbon</div>
                     <div class="prod-desc dos">Jeam Beam</div>
@@ -173,7 +175,8 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/prod10.png">
+                <img class="prod-img" src="../public/assets/products/prod10.png"
+                    alt="Product Image The Dalmore King Alexander III">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Highland Single Malt </div>
                     <div class="prod-desc dos">The Dalmore King Alexander III</div>
@@ -186,7 +189,7 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/prod6.png">
+                <img class="prod-img" src="../public/assets/products/prod6.png" alt="Product Image White Horse">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Scotch Whisky</div>
                     <div class="prod-desc dos">White Horse</div>
@@ -199,7 +202,7 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/prod7.png">
+                <img class="prod-img" src="../public/assets/products/prod7.png" alt="Product Image Johnnie Walker">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Blue Label</div>
                     <div class="prod-desc dos">Johnnie Walker</div>
@@ -212,7 +215,7 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/prod8.png">
+                <img class="prod-img" src="../public/assets/products/prod8.png" alt="Product Image Chivas Regal">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Blended Scotch Whisky 12yo</div>
                     <div class="prod-desc dos">Chivas Regal</div>
@@ -225,7 +228,7 @@
                 </div>
             </div>
             <div class="single-product">
-                <img class="prod-img" src="../public/assets/products/prod11.png">
+                <img class="prod-img" src="../public/assets/products/prod11.png" alt="Product Image Royal Salute">
                 <div class="prod-descriptions">
                     <div class="prod-desc uno">Scotch 21yo Ruby</div>
                     <div class="prod-desc dos">Royal Salute</div>
@@ -241,7 +244,8 @@
         </section>
         <section class="prod-slider">
             <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-            <div class="slide-text uno">1 </div><div class="slide-text dos">of 3</div>
+            <div class="slide-text uno">1 </div>
+            <div class="slide-text dos">of 3</div>
             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
         </section>
     </main>
@@ -267,10 +271,11 @@
 
             <div class="bloque logo">
                 <figure>
-                    <a href='../home.html'><img src="../public/assets/LogoSVG.svg" alt="Logo header" width="5%" height="5%"></a>
+                    <a href='../index.html'><img src="../public/assets/LogoSVG.svg" alt="Logo SayWhisky" width="5%"
+                            height="5%"></a>
                 </figure>
                 <div>
-                    <a href="../home.html">Home</a>
+                    <a href="../index.html">Home</a>
                     <a href="./product.html">Products</a>
                     <a href="./recipes.html">Recipes</a>
                 </div>
@@ -289,5 +294,23 @@
             </div>
         </section>
     </footer>
+    <!-- Animation Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.2.js"
+        integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>

@@ -16,11 +16,19 @@
 
 @import 'media';
 
-/*	BODY STYLE  */
-
+/*	BODY STYLE  
 body {
     background-size: cover;
     background-color:  #030301 !important;
+}
+*/
+
+body {
+    background-color: #101010;
+    opacity: 1;
+    background-image: radial-gradient(#ffab00 1.4000000000000001px, transparent 1.4000000000000001px), radial-gradient(#ffab00 1.4000000000000001px, #101010 1.4000000000000001px);
+    background-size: 56px 56px;
+    background-position: 0 0, 28px 28px;
 }
 
 #carouselExampleCaptions {
@@ -35,12 +43,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: auto;
-    border-top: 2px solid $sdo-color;
-    border-bottom: 2px solid $sdo-color;
+    border: {
+        radius: 2rem;
+        top: 2px solid $sdo-color;
+        bottom:  2px solid $sdo-color;;
+    }
 
     .fp-box {
         padding: 1rem;
-        border-bottom: 0.5px solid $sdo-color;
 
         & img {
             height: auto;
@@ -125,6 +135,7 @@ body {
 /* Separator Section */
 .banner-space {
     margin-top: 5rem;
+
     & img {
         width: 100vw;
         height: auto;
@@ -161,4 +172,3 @@ body {
         }
     }
 }
-

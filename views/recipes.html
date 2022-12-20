@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="../public/sass/home.css">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <!-- Animations aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--
             Cinzel Font & Philosopher
@@ -55,7 +57,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a class="menu__item" href="../home.html">Home</a></li>
+                    <li><a class="menu__item" href="../index.html">Home</a></li>
                     <li><a class="menu__item" href="./product.html">Products</a></li>
                     <li><a class="menu__item" href="./recipes.html">Recipes</a></li>
                     <hr>
@@ -68,14 +70,14 @@
 
         <nav id="nav-bar">
             <div class="nav-col izq">
-                <li><a href="../home.html" class="indice">Home</a></li>
+                <li><a href="../index.html" class="indice">Home</a></li>
                 <li><a href="./product.html" class="indice">Products</a></li>
                 <li><a href="./recipes.html" class="indice">Recipes</a></li>
 
             </div>
 
             <figure class="nav-col logo">
-                <a href='../home.html'><img src="../public/assets/LogoSVG.svg" alt="Logo header"></a>
+                <a href='../index.html'><img src="../public/assets/LogoSVG.svg" alt="Logo SayWhisky"></a>
             </figure>
 
             <div class="nav-col der">
@@ -113,138 +115,760 @@
 
         <section class="recipes-container">
             <div class="recipe A">
-                <img src="../public/assets/recipess/A Jim-Beam-Orange-Julep.jpg">
+                <img src="../public/assets/recipess/A Jim-Beam-Orange-Julep.jpg"
+                    alt="Image Recetas Jim Beam Orange Julep">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modA"
+                        id="btn_modA">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe B">
-                <img src="../public/assets/recipess/B Jim-Beam-Orange-Crush.jpg">
+                <img src="../public/assets/recipess/B Jim-Beam-Orange-Crush.jpg"
+                    alt="Image Recetas Jim Beam Orange Crush">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modB"
+                        id="btn_modB">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe C">
-                <img src="../public/assets/recipess/C Jim-Beam-Orange-You-Glad.jpg">
+                <img src="../public/assets/recipess/C Jim-Beam-Orange-You-Glad.jpg"
+                    alt="Image Recetas Jim Beam Orange You Glad">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
-                </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modC"
+                        id="btn_modC">
+                        View More
+                    </button>
                 </div>
             </div>
+            </div>
             <div class="recipe D">
-                <img src="../public/assets/recipess/D Jim-Beam-Orange-Ginger-Sour.jpg">
+                <img src="../public/assets/recipess/D Jim-Beam-Orange-Ginger-Sour.jpg"
+                    alt="Image Recetas Jim Beam Orange Ginger Sour">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modD"
+                        id="btn_modD">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe E">
-                <img src="../public/assets/recipess/E Jim Beam Bourbon Cream On the Rocks.jpg">
+                <img src="../public/assets/recipess/E Jim Beam Bourbon Cream On the Rocks.jpg"
+                    alt="Image Recetas Jim Beam Bourbon Cream On The Rocks">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modE"
+                        id="btn_modE">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe F">
-                <img src="../public/assets/recipess/F Jim-Beam-Orange-Mule.jpg">
+                <img src="../public/assets/recipess/F Jim-Beam-Orange-Mule.jpg"
+                    alt="Image Recetas Jim Beam Orange Mule">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modF"
+                        id="btn_modF">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe G">
-                <img src="../public/assets/recipess/G kentucky sunrise.jpg">
+                <img src="../public/assets/recipess/G kentucky sunrise.jpg" alt="Image Recetas Kentucky Sunrise">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modG"
+                        id="btn_modG">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe H">
-                <img src="../public/assets/recipess/H Jim Beam Bourbon Cream Hot Chocolate.jpg">
+                <img src="../public/assets/recipess/H Jim Beam Bourbon Cream Hot Chocolate.jpg"
+                    alt="Image Recetas Jim Beam Bourbon Cream Hot Chocolate">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modH"
+                        id="btn_modH">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe I">
-                <img src="../public/assets/recipess/I beam_and_cola.jpg">
+                <img src="../public/assets/recipess/I beam_and_cola.jpg" alt="Image Recetas Jim Beam and Cola">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modI"
+                        id="btn_modI">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe J">
-                <img src="../public/assets/recipess/J JB & Ginger Cocktail_1.png">
+                <img src="../public/assets/recipess/J JB & Ginger Cocktail_1.png"
+                    alt="Image Recetas Jim Beam & Ginger Cocktail">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modJ"
+                        id="btn_modJ">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe K">
-                <img src="../public/assets/recipess/K jim_beam_cranberry_cooler_20150620_L.jpg">
+                <img src="../public/assets/recipess/K jim_beam_cranberry_cooler_20150620_L.jpg"
+                    alt="Image Recetas Jim Beam Cranberry Cooler">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modK"
+                        id="btn_modK">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe L">
-                <img src="../public/assets/recipess/L Cocktail_Detail_Jim_Beam_Black_Sour.jpg">
+                <img src="../public/assets/recipess/L Cocktail_Detail_Jim_Beam_Black_Sour.jpg"
+                    alt="Image Recetas Jim Beam Black Sour">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modL"
+                        id="btn_modL">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe M">
-                <img src="../public/assets/recipess/M JBA & Soda Cocktail_1.png">
+                <img src="../public/assets/recipess/M JBA & Soda Cocktail_1.png"
+                    alt="Image Recetas Jim Beam & Soda Cocktail">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modM"
+                        id="btn_modM">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe N">
-                <img src="../public/assets/recipess/N JB Orange Highball.jpg">
+                <img src="../public/assets/recipess/N JB Orange Highball.jpg"
+                    alt="Image Recetas Jim Beam Orange Highball">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modN"
+                        id="btn_modN">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe Ñ">
-                <img src="../public/assets/recipess/Ñ jim_beam_amaretto_sour.jpg">
+                <img src="../public/assets/recipess/Ñ jim_beam_amaretto_sour.jpg"
+                    alt="Image Recetas Jim Beam Amaretto Sour">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modÑ"
+                        id="btn_modÑ">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe O">
-                <img src="../public/assets/recipess/O JB Soda Highball.jpg">
+                <img src="../public/assets/recipess/O JB Soda Highball.jpg" alt="Image Recetas Jim Beam Soda Highball">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modO"
+                        id="btn_modO">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe P">
-                <img src="../public/assets/recipess/P JB Red Stag Highball.jpg">
+                <img src="../public/assets/recipess/P JB Red Stag Highball.jpg"
+                    alt="Image Recetas Jim Beam Red Stag Highball">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modP"
+                        id="btn_modP">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe Q">
-                <img src="../public/assets/recipess/Q JBB & Soda Cocktail_0.png">
+                <img src="../public/assets/recipess/Q JBB & Soda Cocktail_0.png"
+                    alt="Image Recetas Jim Beam & Soda Cocktail">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modQ"
+                        id="btn_modQ">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe R">
-                <img src="../public/assets/recipess/R JBP & Soda Cocktail.png">
+                <img src="../public/assets/recipess/R JBP & Soda Cocktail.png"
+                    alt="Image Recetas Jim Beam Soda Cocktail">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modR"
+                        id="btn_modR">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe S">
-                <img src="../public/assets/recipess/S Shot04_JB_Orange_w3d_Alt@2x.jpg">
+                <img src="../public/assets/recipess/S Shot04_JB_Orange_w3d_Alt@2x.jpg"
+                    alt="Image Recetas Jim Beam Orange">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modS"
+                        id="btn_modS">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe T">
-                <img src="../public/assets/recipess/T jb_citrus_highball_20160309_au_l_0.jpg">
+                <img src="../public/assets/recipess/T jb_citrus_highball_20160309_au_l_0.jpg"
+                    alt="Image Recetas Jim Beam Citrus Highball">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modT"
+                        id="btn_modT">
+                        View More
+                    </button>
                 </div>
             </div>
             <div class="recipe U">
-                <img src="../public/assets/recipess/U jim_beam_beam_bourbon_sour.jpg">
+                <img src="../public/assets/recipess/U jim_beam_beam_bourbon_sour.jpg"
+                    alt="Image Recetas Jim Beam Bourbon Sour">
                 <div class="recipe-desc">
-                        <a href="#">View More</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modU"
+                        id="btn_modU">
+                        View More
+                    </button>
                 </div>
             </div>
+
+            <!-- Modals-->
+
+            <div class="modal fade" id="modA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM ORANGE JULEP</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>2 parts Jim Beam® Orange</p>
+                            <p>5-6 mint leaves</p>
+                            <p>2 dashes aromatic bitters</p>
+                            <p>0.5 part simple syrup</p>
+                            <p>Garnish with orange wedge and mint sprig</p>
+                            <h5>PREPARACION</h5>
+                            <p>In a mint julep cup or rocks glass, gently muddle the mint, bitters and syrup. Add
+                                crushed ice and Jim Beam® Orange. Stir to combine topping with more ice as needed.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM ORANGE CRUSH</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1.5 parts Jim Beam® Orange</p>
+                            <p>0.5 part orange juice</p>
+                            <p>0.75 part lemon juice</p>
+                            <p>0.5 part simple syrup</p>
+                            <p>Soda water</p>
+                            <p>Garnish with orange wedge and mint sprig</p>
+                            <h5>PREPARACION</h5>
+                            <p>Add all ingredients (except soda water) to a cocktail shaker with ice. Shake and strain
+                                into a collins glass over ice. Top with soda water and gently stir.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM ORANGE YOU GLAD</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1.5 parts Jim Beam® Orange</p>
+                            <p>0.5 part simple syrup</p>
+                            <p>1 part pineapple juice</p>
+                            <p>0.5 part lime juice</p>
+                            <p>2 dashes aromatic bitters</p>
+                            <p>Garnish with orange and pineapple wedge and maraschino cherry</p>
+                            <h5>PREPARACION</h5>
+                            <p>Add all ingredients to a cocktail shaker with ice. Shake until well chilled and strain
+                                into a rocks glass over fresh ice.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM ORANGE GINGER SOUR</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1.5 parts Jim Beam® Orange</p>
+                            <p>0.75 part ginger syrup</p>
+                            <p>0.75 part lemon juice</p>
+                            <p>Garnish with orange or lemon wedge and candied ginger</p>
+                            <h5>PREPARACION</h5>
+                            <p>First, make your ginger syrup. Bring ginger, sugar and water to a simmer in a small
+                                saucepan. Stir until sugar has dissolved, then simmer for 30 minutes. Strain out the
+                                ginger and let the syrup come to room temperature.</p>
+                            <p>For the cocktail, combine all ingredients in a cocktail shaker with ice. Shake until well
+                                chilled and strain into a cocktail glass over ice.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM BOURBON CREAM ON THE ROCKS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>2 parts Jim Beam® Bourbon Cream</p>
+                            <h5>PREPARACION</h5>
+                            <p>Pour over ice and garnish with a mint sprig (optional).</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modF" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM ORANGE MULE</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1.5 parts Jim Beam® Orange</p>
+                            <p>Lemon wedge</p>
+                            <p>0.5 part simple syrup</p>
+                            <p>4 parts ginger beer</p>
+                            <p>Garnish with orange wedge and mint sprig</p>
+                            <h5>PREPARACION</h5>
+                            <p>Squeeze and drop a lemon wedge into a cocktail shaker with ice. Add all ingredients
+                                (except the ginger beer) and shake. Strain into a collins glass or mule mug over ice.
+                                Top with ginger beer and gently stir.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modG" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">KENTUCKY SUNRISE</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>0.5 part Grenadine</p>
+                            <p>1 part Jim Beam® Bourbon</p>
+                            <p>3 parts Orange Juice</p>
+                            <p>Orange Slice or a Cherry</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build in order over ice in a tall highball glass. Float the grenadine. Garnish with an
+                                orange slice or a cherry.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modH" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM BOURBON CREAM HOT CHOCOLATE
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>2 parts Jim Beam® Bourbon Cream</p>
+                            <p>6 parts hot water</p>
+                            <p>1 packet of hot cocoa mix</p>
+                            <h5>PREPARACION</h5>
+                            <p>Stir together the cocoa mix and hot water in a mug. Add Bourbon Cream and give it another
+                                quick stir. Top with cinnamon, whipped cream or marshmallows.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modI" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM & COLA</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>4 parts Cola</p>
+                            <p>2 parts Jim Beam® Bourbon</p>
+                            <p>Lime wedge</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a tall highball glass. Garnish with a lime wedge.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modJ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM & GINGER HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 Part Jim Beam® Bourbon</p>
+                            <p>3 Parts Ginger Ale</p>
+                            <p>Garnish with Lemon Wedge</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a highball glass.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modK" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM CRANBERRY COOLER</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>2 parts Cranberry Juice</p>
+                            <p>0.5 part DeKuyper® Triple Sec Liqueur</p>
+                            <p>1.5 parts Jim Beam® Bourbon</p>
+                            <p>2 parts Fresh Lemon Sour</p>
+                            <p>Lemon Wedge</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build ingredients in order listed over ice in a tall highball glass. Garnishwith a lemon
+                                wedge.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modL" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM BLACK WHISKEY SOUR</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam Black®</p>
+                            <p>1 part fresh Lemon Juice</p>
+                            <p>1/2 part simple syrup</p>
+                            <p>1/2 part egg white</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build in a cocktail shaker. Shake, strain, and serve.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modM" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM APPLE HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam® Apple</p>
+                            <p>4 parts premium soda water</p>
+                            <p>Garnish with a lemon wedge</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a tall highball glass. Garnish with a lemon wedge.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM ORANGE & SODA HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam Orange</p>
+                            <p>4 parts premium soda water</p>
+                            <p>Garnish with orange wedge</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a highball glass</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modÑ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM AMARETTO SOUR</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>2 parts Jim Beam® Bourbon</p>
+                            <p>2 parts DeKuyper® Amaretto Liqueur</p>
+                            <p>0.5 part Lemon-Lime Soda</p>
+                            <p>0.5 part Lemon Juice</p>
+                            <p>0.5 teaspoon Sugar</p>
+                            <p>Lemon wheel and cherry</p>
+                            <h5>PREPARACION</h5>
+                            <p>Shake with ice in a cocktail shaker and strain into a glass. Top with lemon lime soda.
+                                Garnish with a lemon slice and cherry.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modO" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM & SODA HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam® White</p>
+                            <p>4 parts premium soda water</p>
+                            <p>Garnish with lemon wedge</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a highball glass</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM RED STAG & SODA HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam® Red Stag</p>
+                            <p>4 parts premium soda water</p>
+                            <p>Garnish with one black cherry</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a highball glass</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modQ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM BLACK® HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam Black® Bourbon</p>
+                            <p>4 parts premium soda water</p>
+                            <p>Garnish with an orange peel</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a highball glass.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM PEACH & SODA HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam® Peach</p>
+                            <p>4 parts premium soda water</p>
+                            <p>Garnish with a Peach slice or sprig of mint</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a tall highball glass.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM ORANGE HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>1 part Jim Beam® Orange</p>
+                            <p>4 parts premium soda water</p>
+                            <p>Garnish with an orange wedge</p>
+                            <h5>PREPARACION</h5>
+                            <p>Build over ice in a tall highball glass. Garnish with an orange wedge.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="modT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM® CITRUS HIGHBALL</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>45ml Jim Beam® White Label</p>
+                            <p>20ml fresh lemon juice</p>
+                            <p>Soda water</p>
+                            <p>Crushed ice</p>
+                            <p>Slice of lemon</p>
+                            <p>Sprig of rosemary</p>
+                            <h5>PREPARACION</h5>
+                            <p>Pour 45ml of Jim Beam® White Label over a packed glass of ice. Add 20ml of fresh lemon
+                                juice. Top with cold soda water. Stir with a long spoon and enjoy. Garnish with a lemon
+                                slice and a sprig of rosemary.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modU" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">JIM BEAM® BOURBON SOUR</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>INGREDIENTES</h5>
+                            <p>2 parts Jim Beam® Bourbon</p>
+                            <p>1 part Lemon Juice</p>
+                            <p>0.5 parts Lemon Lime Soda</p>
+                            <p>0.50 Teaspoon Sugar</p>
+                            <p>Lemon wedge and cherry</p>
+                            <h5>PREPARACION</h5>
+                            <p>Mix Jim Beam® with lemon juice, sugar, and ice in shaker. Shake vigorously and strain
+                                into whiskey sour glass. Garnish with lemon wedge and cherry.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
 
         </section>
     </main>
@@ -267,11 +891,11 @@
 
             <div class="bloque logo">
                 <figure>
-                    <a href='../home.html'><img src="../public/assets/LogoSVG.svg" alt="Logo header" width="5%"
+                    <a href='../index.html'><img src="../public/assets/LogoSVG.svg" alt="Logo SayWhisky" width="5%"
                             height="5%"></a>
                 </figure>
                 <div>
-                    <a href="../home.html">Home</a>
+                    <a href="../index.html">Home</a>
                     <a href="./product.html">Products</a>
                     <a href="./recipes.html">Recipes</a>
                 </div>
@@ -290,6 +914,32 @@
             </div>
         </section>
     </footer>
+    <!-- Animation Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.2.js"
+        integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        const myModal = document.getElementById('modA')
+        const myInput = document.getElementById('btn_modA')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
 </body>
 
 </html>
